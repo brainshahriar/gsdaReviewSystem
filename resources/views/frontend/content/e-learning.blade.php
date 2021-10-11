@@ -5,7 +5,7 @@
 
 
 
-        <h2 class="title-head">E-learning <span>Courses</span></h2>
+        <h2 class="title-head">E-learning <span>Courses</span></h2> 
 
 
       </div>
