@@ -105,11 +105,21 @@
                   <div class="review">
                     <span>Review</span>
                     <ul class="cours-star">
-                      <li class="active"><i class="fa fa-star"></i></li>
-                      <li class="active"><i class="fa fa-star"></i></li>
-                      <li class="active"><i class="fa fa-star"></i></li>
-                      <li class="active"><i class="fa fa-star"></i></li>
-                      <li class="active"><i class="fa fa-star"></i></li>
+                      @if (App\Models\CourseReview::where('classroomcourse_id',$row->id)->first())
+                    
+   
+                      @php
+                         $courseReview=App\Models\CourseReview::where('classroomcourse_id',$row->id)->where('status','approve')->latest()->get();
+                        $rating = App\Models\CourseReview::where('classroomcourse_id',$row->id)->where('status','approve')->avg('rating');
+                        $avgRating = number_format($rating,1);
+                      @endphp
+                      @for ($i =1 ; $i <= 5 ; $i++)
+                      <span style="color: red" class="fa fa-star{{ ($i <= $avgRating) ? '' : '-empty' }}"></span>
+                    @endfor
+                   
+                    @else
+                    <span class="text-danger">No Review</span>
+                    @endif
 
                     </ul>
                   </div>
