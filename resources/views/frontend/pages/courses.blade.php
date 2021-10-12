@@ -44,12 +44,12 @@
             </div>
           </div>
           <div class="widget widget_archive">
-                            <h5 class="widget-title style-1">All Courses Categories</h5>
+                            <h5 class="widget-title style-1">All Courses Categories</h5> 
                             <ul>
-                                <li class="active"><a href="#">General</a></li>
+                                <li class="active"><a href="{{route('courses')}}">All Courses</a></li>
 
                                 @foreach($course_categories as $row)
-                                <li><a href="#">{{$row->mcategory_title}}</a></li>
+                                <a href="{{ url('category/course/'.$row->id) }}"><li>{{$row->mcategory_title}}</li></a>
                                 @endforeach
                             </ul>
                         </div>

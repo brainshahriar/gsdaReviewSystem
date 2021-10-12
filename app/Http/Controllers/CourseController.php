@@ -302,7 +302,7 @@ class CourseController extends Controller
 
 
 
-  public function course_details_frontend($id)
+  public function course_details_frontend($id) 
   {
 
     $course_categories= CourseCategory::all();
@@ -467,6 +467,16 @@ public function CourseInfo($id)
 
 
           return view('/backend/pages/courses.course_curricullum',compact('course'));
+        }
+
+        public function subcategoryWiseProductShow($subcat_id)
+        {
+          $course= Course::where('course_category_id',$subcat_id)->orderBy('id','DESC')->latest()->limit(2)->paginate(9);
+      
+          $course_categories= CourseCategory::all();
+          $main_categories= MainCategory::all();
+     
+          return view ('categorywisecourseshow',compact('course_categories','main_categories','course'));
         }
 
 

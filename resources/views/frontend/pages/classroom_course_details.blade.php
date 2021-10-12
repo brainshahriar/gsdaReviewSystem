@@ -169,21 +169,21 @@
                       <thead>
                         <tr>
                           <th class="cell-label">&nbsp;</th>
-                          <th><i class="fa fa-star"></i></th>
-                          <th><i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i></th>
-                          <th><i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i></th>
-                          <th><i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i></th>
-                          <th><i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i></th>
+                          <th><i class="fa fa-star" style="color: red"></i></th>
+                          <th><i class="fa fa-star" style="color: red"></i>
+                            <i class="fa fa-star"  style="color: red"></i></th>
+                          <th><i class="fa fa-star" style="color: red"></i>
+                            <i class="fa fa-star" style="color: red"></i>
+                            <i class="fa fa-star" style="color: red"></i></th>
+                          <th><i class="fa fa-star" style="color: red"></i>
+                            <i class="fa fa-star" style="color: red"></i>
+                            <i class="fa fa-star" style="color: red"></i>
+                            <i class="fa fa-star" style="color: red"></i></th>
+                          <th><i class="fa fa-star" style="color: red"></i>
+                            <i class="fa fa-star" style="color: red"></i>
+                            <i class="fa fa-star" style="color: red"></i>
+                            <i class="fa fa-star" style="color: red"></i>
+                            <i class="fa fa-star" style="color: red"></i></th>
                         </tr>
                       </thead>	
                       <tbody>

@@ -43,7 +43,7 @@
               <span>Review</span>
               <ul class="cours-star">
                 @if (App\Models\CourseReview::where('classroomcourse_id',$row->id)->first())
-                    
+                     
    
                 @php
                    $courseReview=App\Models\CourseReview::where('classroomcourse_id',$row->id)->where('status','approve')->latest()->get();

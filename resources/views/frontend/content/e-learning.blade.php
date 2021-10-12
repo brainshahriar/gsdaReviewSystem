@@ -55,7 +55,7 @@
               @endfor
               <span>({{ count($courseReview) }})</span>
               @else
-              <span class="text-danger">No Review</span>
+              <span class="text-danger">No Review</span> 
               @endif
               </ul>
             </div>
