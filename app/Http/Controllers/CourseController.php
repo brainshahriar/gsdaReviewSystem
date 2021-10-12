@@ -469,7 +469,7 @@ public function CourseInfo($id)
           return view('/backend/pages/courses.course_curricullum',compact('course'));
         }
 
-        public function subcategoryWiseProductShow($subcat_id)
+        public function subcategoryWiseCourseShow($subcat_id)
         {
           $course= Course::where('course_category_id',$subcat_id)->orderBy('id','DESC')->latest()->limit(2)->paginate(9);
       

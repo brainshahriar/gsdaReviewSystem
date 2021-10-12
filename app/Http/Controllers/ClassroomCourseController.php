@@ -8,6 +8,7 @@ use App\Models\MainCategory;
 use App\Models\CourseCategory;
 use App\Models\ClassroomCourse;
 use App\Models\ClassroomInfo;
+use App\Models\Course;
 
 class ClassroomCourseController extends Controller
 {
@@ -300,6 +301,16 @@ class ClassroomCourseController extends Controller
           );
           return Redirect()->back()->with($notification);
 
+        }
+        
+        public function subcategoryWiseClassroomCourseShow($subcat_id)
+        {
+          $course= ClassroomCourse::where('course_category_id',$subcat_id)->orderBy('id','DESC')->latest()->limit(2)->paginate(9);
+      
+          $course_categories= CourseCategory::all();
+          $main_categories= MainCategory::all();
+     
+          return view ('categorywiseclassroomcourseshow',compact('course_categories','main_categories','course'));
         }
 
   }

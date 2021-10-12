@@ -294,7 +294,10 @@ Route::get('/admin/review-delete/{review_id}', [ReviewFromAdminController::class
 Route::get('/admin/review-approve/{review_id}', [ReviewFromAdminController::class,'approve'])->middleware('is_admin');
 
 
-//category wise product show
+//category wise course show
 
-Route::get('category/course/{subcat_id}', [CourseController::class,'subcategoryWiseProductShow']);
+Route::get('category/course/{subcat_id}', [CourseController::class,'subcategoryWiseCourseShow']);
+Route::get('category/classroom-course/{subcat_id}', [ClassroomCourseController::class,'subcategoryWiseClassroomCourseShow']);
+
+
 

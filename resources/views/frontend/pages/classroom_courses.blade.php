@@ -46,10 +46,10 @@
           <div class="widget widget_archive">
                             <h5 class="widget-title style-1">All Courses Categories</h5>
                             <ul>
-                                <li class="active"><a href="{{route('classroom-courses')}}">All Courses</a></li>
+                                <li class=""><a href="{{route('classroom-courses')}}">All Courses</a></li>
 
                                 @foreach($course_categories as $row)
-                                <li><a href="#">{{$row->mcategory_title}}</a></li>
+                                <li><a href="{{ url('category/classroom-course/'.$row->id) }}">{{$row->mcategory_title}}</a></li>
                                 @endforeach
                             </ul>
                         </div>
